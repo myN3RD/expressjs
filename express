@@ -1,0 +1,15 @@
+app.route()                                 https://expressjs.com/de/guide/routing.html#app-route
+
+- we can use this method instead of 3 different routes
+
+
+app.route('/book')
+  .get(function(req, res) {
+    res.send('Get a random book');
+  })
+  .post(function(req, res) {
+    res.send('Add a book');
+  })
+  .put(function(req, res) {
+    res.send('Update the book');
+  });
